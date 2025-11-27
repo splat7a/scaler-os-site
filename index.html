@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaler OS - Amazon Advertising Intelligence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span {
+            color: #ffd700;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 1;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 80px;
+            padding: 0 20px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .feature-card p {
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .stat {
+            text-align: center;
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            margin-top: 80px;
+            opacity: 0.8;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav a {
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Scaler<span>OS</span></div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="/privacy.html">Privacy</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <h1>Amazon Advertising<br>Intelligence Platform</h1>
+            <p>Advanced automation and analytics for Amazon PPC campaigns. Scale your advertising with precision and confidence.</p>
+            <a href="#features" class="cta-button">Learn More</a>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">$2M+</span>
+                    <span class="stat-label">Ad Spend Managed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Campaigns Optimized</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">35%</span>
+                    <span class="stat-label">Average ACoS Reduction</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features" id="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Real-Time Analytics</h3>
+                <p>Monitor campaign performance with live data from Amazon Ads API. Make data-driven decisions instantly.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Smart Automation</h3>
+                <p>Automated bid optimization and budget allocation based on your profitability targets and market conditions.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Precision Targeting</h3>
+                <p>Advanced keyword research and negative keyword discovery to maximize ROAS and eliminate wasted spend.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Performance Insights</h3>
+                <p>Deep analytics on SKU-level profitability, market trends, and competitive positioning.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>API Integration</h3>
+                <p>Direct integration with Amazon Ads API for seamless campaign management and reporting.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Enterprise Security</h3>
+                <p>Bank-level encryption and compliance with Amazon's data protection standards.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="contact">
+        <p>&copy; 2024 Scaler OS. All rights reserved.</p>
+        <p><a href="/privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
