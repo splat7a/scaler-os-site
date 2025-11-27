@@ -58,7 +58,7 @@
         
         .hero {
             text-align: center;
-            padding: 100px 0;
+            padding: 60px 0 40px;
             color: white;
         }
         
@@ -78,29 +78,51 @@
             margin-right: auto;
         }
         
-        .cta-button {
-            display: inline-block;
-            padding: 16px 40px;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 18px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        .highlight-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
         }
         
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s, background 0.3s;
+        }
+        
+        .highlight-box:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .highlight-box-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .highlight-box p {
+            font-size: 15px;
+            opacity: 0.9;
+            line-height: 1.5;
         }
         
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-top: 80px;
+            margin-top: 60px;
             padding: 0 20px;
         }
         
@@ -131,31 +153,6 @@
         .feature-card p {
             color: #5a6c7d;
             line-height: 1.7;
-        }
-        
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 60px;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        
-        .stat {
-            text-align: center;
-            color: white;
-        }
-        
-        .stat-number {
-            font-size: 48px;
-            font-weight: 800;
-            display: block;
-            margin-bottom: 10px;
-        }
-        
-        .stat-label {
-            font-size: 18px;
-            opacity: 0.9;
         }
         
         footer {
@@ -205,20 +202,24 @@
         <section class="hero">
             <h1>Amazon Advertising<br>Intelligence Platform</h1>
             <p>Advanced automation and analytics for Amazon PPC campaigns. Scale your advertising with precision and confidence.</p>
-            <a href="#features" class="cta-button">Learn More</a>
             
-            <div class="stats">
-                <div class="stat">
-                    <span class="stat-number">$2M+</span>
-                    <span class="stat-label">Ad Spend Managed</span>
+            <div class="highlight-boxes">
+                <div class="highlight-box">
+                    <div class="highlight-box-icon">🚀</div>
+                    <h3>Built for Scale</h3>
+                    <p>Manage multiple brands and campaigns from a single unified dashboard</p>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">10K+</span>
-                    <span class="stat-label">Campaigns Optimized</span>
+                
+                <div class="highlight-box">
+                    <div class="highlight-box-icon">💡</div>
+                    <h3>Data-Driven</h3>
+                    <p>Make informed decisions with real-time performance analytics</p>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">35%</span>
-                    <span class="stat-label">Average ACoS Reduction</span>
+                
+                <div class="highlight-box">
+                    <div class="highlight-box-icon">⚙️</div>
+                    <h3>Automated</h3>
+                    <p>Save hours with intelligent bid management and optimization</p>
                 </div>
             </div>
         </section>
